@@ -235,6 +235,9 @@ nav.show .menu {
 
   display: grid;
   place-content: center;
+
+  transition: 0.5s;
+  transform: translateY(0px);
 }
 
 nav.show .menu ul {
@@ -368,6 +371,9 @@ nav.show div.icon-close {
   border-bottom: 0.25rem solid var(--base-color);
   border-radius: 0.25rem 0.25rem 0 0;
   text-align: center;
+
+  transition: 0.5s;
+  transform: translateY(0px);
 }
 
 .card i {
@@ -380,13 +386,21 @@ nav.show div.icon-close {
   display: inline-block;
 }
 .card i:hover {
-  transform: translateY(-8px);
   color: hsl(159, 76%, 40%);
+
+  transition: 0.5s;
+  transform: translateY(-8px);
 }
 
 .card .title {
   font-size: 1.5rem;
   margin-bottom: 0.75rem;
+}
+
+#services .cards.grid .card:hover {
+  display: inline-block;
+  color: hsl(159, 76%, 40%);
+  transform: translateY(-10px);
 }
 
 /*====  TESTIMONIALS  ============================ */
@@ -513,6 +527,28 @@ footer .social a {
 footer .social a:hover {
   transform: translateY(-8px);
 }
+footer .social a i.icon-instagram:hover {
+  color: #fc0000;
+  background: -webkit-linear-gradient(
+    45deg,
+    #f7ce02,
+    #f96302,
+    #f71102,
+    #d32155,
+    #b43890,
+    #904eca,
+    #8944bb,
+    #7832ae
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+footer .social a i.icon-facebook:hover {
+  color: #385898;
+}
+footer .social a i.icon-youtube:hover {
+  color: #c00;
+}
 
 /* back to top */
 .back-to-top {
@@ -531,13 +567,13 @@ footer .social a:hover {
   visibility: hidden;
   opacity: 0;
 
-  transition: 0.3s;
+  transition: 0.5s;
   transform: translateY(-8px);
 }
 a.back-to-top:hover {
   transform: translateY(-6px);
   color: hsl(159, 76%, 30%);
-  transition: 0.5s;
+  transition: 0.9s;
   display: inline-block;
   box-shadow: 0px 0px 5px black;
 }
@@ -1076,7 +1112,7 @@ a.back-to-top:hover {
   }
 
   nav.show .menu {
-    transition: 0.2s;
+    transition: 0.5s;
   }
 
   nav .menu ul li a.title {
@@ -1102,17 +1138,13 @@ a.back-to-top:hover {
     gap: 2rem;
   }
 
+  nav ul li a {
+    height: 10px;
+  }
+
   nav ul li a::after {
-    content: '';
-    width: 0%;
-    height: 2px;
     background: #e4e4e4;
-
-    position: absolute;
-    left: 0;
-    bottom: -1.5rem;
-
-    transition: 0.2s;
+    top: 2rem;
   }
 
   /*  Home */

@@ -41,11 +41,11 @@ const swiper = new Swiper('.swiper', {
   mousewheel: true,
   keyboard: true,
   breakpoints: {
-    1023: {
+    845: {
       slidesPerView: 3,
       setWarrapperSize: true
     },
-    767: {
+    700: {
       slidesPerView: 2,
       setWarrapperSize: true
     }
