@@ -118,3 +118,5 @@ window.addEventListener('scroll', function () {
   changeHeaderWhenScroll()
   activateMenuAtCurrentSection()
 })
+
+/* Dark Mode */
